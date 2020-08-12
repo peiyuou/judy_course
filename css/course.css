@@ -209,13 +209,22 @@ div.course div.check_out div.check_out_contain div.credit_card {
 }
 
 div.course div.check_out div.check_out_contain div.credit_card div.flip {
-  width: 100%;
+  width: 300px;
   height: 200px;
-  -webkit-transition: .6s;
-  transition: .6s;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   position: relative;
+  margin: 0 auto;
+}
+
+div.course div.check_out div.check_out_contain div.credit_card div.flip:hover {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  transform-origin: center;
 }
 
 div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front {
@@ -226,7 +235,7 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip div.card
   position: absolute;
   color: #ccc;
   top: 0;
-  right: -60px;
+  left: 0;
   text-shadow: 0 1px 1px black;
   -webkit-box-shadow: 0 5px 15px #486886;
           box-shadow: 0 5px 15px #486886;
@@ -245,18 +254,18 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip div.card
       justify-content: space-around;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.account_num {
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.account_num {
   text-align: center;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.account_num span {
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.account_num span {
   padding: 0 10px;
   font-size: 20px;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.owner_name {
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.owner_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,13 +277,13 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip div.owne
           align-items: flex-end;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.owner_name div.credit_logo {
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.owner_name div.credit_logo {
   width: 80px;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.owner_name div.credit_logo img {
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.owner_name div.credit_logo img {
   width: 100%;
 }
 
@@ -286,12 +295,60 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip div.card
   position: absolute;
   color: #ccc;
   top: 0;
-  right: -60px;
+  left: 0;
   text-shadow: 0 1px 1px black;
   -webkit-box-shadow: 0 5px 15px #486886;
           box-shadow: 0 5px 15px #486886;
   padding: 5px 15px;
-  background: orange;
+  z-index: 5;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.black_stripe {
+  height: 40px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.788));
+  width: 100%;
+  margin: 30px 0 10px 0;
+}
+
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.white_stripe {
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 15px;
+  height: 30px;
+}
+
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.white_stripe span {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  padding: 5px 10px 0;
+}
+
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.credit_logo {
+  width: 80px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 10px;
+  margin-right: 15px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.credit_logo img {
+  width: 100%;
 }
 
 div.course div.check_out div.check_out_contain div.form {
