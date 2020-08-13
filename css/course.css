@@ -597,4 +597,89 @@ div.course_introduce div.cus_outline div.cus_outline_contain ol li {
 div.course_introduce div.cus_outline div.cus_outline_contain ol li:last-child {
   border-bottom: none;
 }
+
+body {
+  background: orange;
+}
+
+img {
+  width: 100%;
+}
+
+div.course_slide ul.slide_contain {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+div.course_slide ul.slide_contain .slick-center .cus_card {
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+div.course_slide ul.slide_contain li.slide_item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px;
+}
+
+div.course_slide ul.slide_contain li.slide_item:focus {
+  outline: none;
+  border: none;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card {
+  background: #fff;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card a div.card_img img {
+  width: 100%;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card a div.card_content {
+  padding: 5px;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card a div.card_content p {
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card a div.card_content div.card_content_scrb div.card_content_join span {
+  font-size: 13px;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card a div.card_content div.card_content_scrb div.card_content_msg {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.card_type {
+  background: orange;
+  border-radius: 5px;
+  padding: 0 5px;
+  line-height: 20px;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.card_time {
+  line-height: 20px;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.card_price {
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div.course_slide ul.slide_contain li.slide_item div.cus_card div.add_cart button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0;
+  line-height: inherit;
+}
 /*# sourceMappingURL=course.css.map */
