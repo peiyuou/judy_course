@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap_grid/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/app_public.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+
+
+
+">
+
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header_wrap">
+        <header class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header_nav">
+                <ul>
+                    <li><a href="#">職涯分析</a></li>
+                    <li><a href="#">行業攻略</a></li>
+                    <li><a href="#">職涯論壇</a></li>
+                    <li><a href="#">探索課程</a></li>
+                    <li><a href="#">明信片</a></li>
+                </ul>
+            </div>
+            <div class="header_icon">
+                <div class="cart">
+                    <a href="#"><i class="fas fa-shopping-cart"></i>
+                        <div class="cart_num"><span>1</span></div>
+                    </a>
+                    <!-- <div class="cart_num"><span>1</span></div> -->
+                </div>
+
+                <div class="member"><a href="#"><i class="fas fa-user"></i></a></div>
+            </div>
+        </header>
+
+    </div>
+
+    <div id="course_main">
+        <!-- cart -->
+        <div class="side_cart cart_off">cart</div>
+        <!-- banner -->
+        <!-- <div class="course_main_banner row">
+            <div class="banner col-xl-12">
+                {{message}}
+            </div>
+        </div> -->
+
+        <!-- container -->
+        <div class="course_main_second container">
+
+            <!-- course_nav -->
+            <div class="course_nav row">
+                <div class="course_nav_container col-xl-12">
+                    <ul class="container">
+                        <div class="row">
+                            <li v-for="type in category" :id="type.link_from"
+                                class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+                                <a href="#">
+                                    <h3>
+                                        {{type.link_title}}
+                                    </h3>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!-- main_course -->
+            <div class="main_course row">
+                <div class="course_session_title col-xl-12">
+                    <h2>本周主打</h2>
+                </div>
+
+                <div class="main_course_pic col-xl-6">
+                    <img :src="main_course.img" alt="">
+                </div>
+                <div class="main_course_content col-xl-6">
+                    <h3>{{main_course.course_title}}</h3>
+                </div>
+
+            </div>
+            <!-- hot_course -->
+            <div class="hot_course row">
+                <div class="course_session_title col-xl-12">
+                    <h2>熱門課程</h2>
+                </div>
+                <ul class="auto_slider owl-carousel">
+                    <li class="auto_slider_card " v-for="card in course_card">
+                        <a href="#">
+                            <div class="auto_slider_card_pic">
+                                <img :src="card.img" alt="">
+                            </div>
+                            <div class="auto_slider_card_content">
+                                <p>{{card.course_title}}</p>
+                                <div class="card_content_scrb">
+                                    <div class="card_content_join">
+                                        <i class="fas fa-user-friends"></i><span>{{card.join}}人已參與此課程</span>
+                                    </div>
+                                    <div class="card_content_msg">
+                                        <span class="card_time">總計{{card.hour}}小時</span>
+                                        <span class="card_price">NT${{card.price}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="add_cart_btn">
+                            <button class="btn_primary">加入購物車</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- category_course -->
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/d18b20bddd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script>
+        new Vue({
+            el: '#course_main',
+            data() {
+                return {
+                    message: 'hello',
+                    category: [
+                        //     {
+                        //     link_from: 'hot',
+                        //     link_to: 'hot_section',
+                        //     link_title: '熱門課程',
+                        // }, 
+                        {
+                            link_from: 'practical',
+                            link_to: 'practical_section',
+                            link_title: '實作型',
+                        }, {
+                            link_from: 'research',
+                            link_to: 'research_section',
+                            link_title: '研究型',
+
+                        }, {
+                            link_from: 'art',
+                            link_to: 'art_section',
+                            link_title: '文藝型',
+
+                        }, {
+                            link_from: 'social',
+                            link_to: 'social_section',
+                            link_title: '社會型',
+
+                        }, {
+                            link_from: 'enterprise',
+                            link_to: 'enterprise_section',
+                            link_title: '企業型',
+
+                        }, {
+                            link_from: 'thing',
+                            link_to: 'thing_section',
+                            link_title: '事務型',
+                        }
+                    ],
+                    main_course: {
+                        img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                        course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                        join: 9999,
+                        hour: 3,
+                        price: 660,
+                    },
+                    course_card: [{
+                        img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                        course_title: '九個步驟快速提昇簡報力',
+                        join: 9999,
+                        hour: 3,
+                        price: 660,
+
+                    }, {
+                        img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
+                        course_title: '行銷 = 內容 X 社群 X 商務',
+                        join: 5555,
+                        hour: 5,
+                        price: 550,
+
+                    }, {
+                        img: './img/course/course_img/課程照片-職場溝通管理學：打造團隊好關係與高績效.jpg',
+                        course_title: '打造團隊好關係與高績效',
+                        join: 7777,
+                        hour: 7,
+                        price: 770,
+
+                    }, {
+                        img: './img/course/course_img/課程照片-職場溝通管理學：打造團隊好關係與高績效.jpg',
+                        course_title: '打造團隊好關係與高績效',
+                        join: 7777,
+                        hour: 7,
+                        price: 770,
+
+                    }, ],
+                }
+
+            },
+            methods: {
+
+            },
+        })
+    </script>
+
+    <script>
+        $(".auto_slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            items: 4,
+        });
+    </script>
+
+
+</body>
+
+</html>

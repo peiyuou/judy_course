@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
+
+    </link>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css">
+    </link>
+</head>
+
+<body>
+
+    <div class="col-md-12 owl-carousel owl-theme">
+        <div class="item" style="max-width: 450px; margin-right: 10px;">
+            <h4>1</h4><img src="https://picsum.photos/300/200">
+        </div>
+        <div class="item" style="max-width: 450px; margin-right: 10px;">
+            <h4>2</h4><img src="https://picsum.photos/300/200">
+        </div>
+        <div class="item" style="max-width: 350px; margin-right: 10px;">
+            <h4>3</h4><img src="https://picsum.photos/300/200">
+        </div>
+        <div class="item" style="max-width: 350px; margin-right: 10px;">
+            <h4>4</h4><img src="https://picsum.photos/300/200">
+        </div>
+        <div class="item" style="max-width: 350px; margin-right: 10px;">
+            <h4>5</h4><img src="https://picsum.photos/300/200">
+        </div>
+        <div class="item" style="max-width: 350px; margin-right: 10px;">
+            <h4>6</h4><img src="https://picsum.photos/300/200">
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
+</body>
+
+</html>
