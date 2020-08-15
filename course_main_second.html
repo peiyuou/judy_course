@@ -100,7 +100,7 @@
                     <h2>熱門課程</h2>
                 </div>
                 <ul class="auto_slider owl-carousel">
-                    <li class="auto_slider_card " v-for="card in course_card">
+                    <li class="auto_slider_card " v-for="card in hot_course">
                         <a href="#">
                             <div class="auto_slider_card_pic">
                                 <img :src="card.img" alt="">
@@ -124,21 +124,55 @@
                     </li>
                 </ul>
             </div>
-            <!-- category_course -->
+            <!-- intro_banner-->
+            <div class="intro_banner row">
+                <div class="intro_banner_container col-xl-12">
+                    <div class="intro_banner_title">hello</div>
+                </div>
+            </div>
+            <!-- courses-->
+            <div class="practical_session courses_session row" :id="section.link_to" v-for="section in category">
+                <div class="course_session_title col-xl-12">
+                    <h2>{{section.link_title}}</h2>
+                </div>
+                <div class="course_session_contain col-xl-12">
+                    <ul>
+                        <li class="auto_slider_card " v-for="card in section.courses">
+                            <div class="card_pic">
+                                <a href="#">
+                                    <img :src="card.img" alt="">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <p>{{card.course_title}}</p>
+                                <div class="card_content_scrb">
+                                    <div class="card_content_join">
+                                        <i class="fas fa-user-friends"></i><span>{{card.join}}人已參與此課程</span>
+                                    </div>
+                                    <div class="card_content_msg">
+                                        <div class="type_time">
+                                            <span class="card_type " style="background:orange;">實作型</span>
+                                            <span class="card_time">總計{{card.hour}}小時</span>
+                                        </div>
+
+                                        <div class="price_btn">
+                                            <span class="card_price">NT${{card.price}}</span>
+                                            <button class="btn_primary">加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
+                            <!-- <div class="add_cart_btn">
+                                <button class="btn_primary">加入購物車</button>
+                            </div> -->
+                        </li>
+                    </ul>
+                </div>
 
-
-
-
-
-
-
-
+            </div>
         </div>
-
-
-
     </div>
 
 
@@ -149,48 +183,164 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/course/slide_to_session.js"></script>
+    <script src="./js/course/owl_auto_slide.js"></script>
     <script>
         new Vue({
             el: '#course_main',
             data() {
                 return {
                     message: 'hello',
-                    category: [
-                        //     {
-                        //     link_from: 'hot',
-                        //     link_to: 'hot_section',
-                        //     link_title: '熱門課程',
-                        // }, 
-                        {
-                            link_from: 'practical',
-                            link_to: 'practical_section',
-                            link_title: '實作型',
+                    category: [{
+                        link_from: 'practical',
+                        link_to: 'practical_session',
+                        link_title: '實作型',
+                        color: 'orange',
+                        courses: [{
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
                         }, {
-                            link_from: 'research',
-                            link_to: 'research_section',
-                            link_title: '研究型',
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }, {
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }],
 
+                    }, {
+                        link_from: 'research',
+                        link_to: 'research_session',
+                        link_title: '研究型',
+                        courses: [{
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
                         }, {
-                            link_from: 'art',
-                            link_to: 'art_section',
-                            link_title: '文藝型',
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }, {
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }],
 
+                    }, {
+                        link_from: 'art',
+                        link_to: 'art_session',
+                        link_title: '文藝型',
+                        courses: [{
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
                         }, {
-                            link_from: 'social',
-                            link_to: 'social_section',
-                            link_title: '社會型',
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }, {
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }],
 
-                        }, {
-                            link_from: 'enterprise',
-                            link_to: 'enterprise_section',
-                            link_title: '企業型',
 
+                    }, {
+                        link_from: 'social',
+                        link_to: 'social_session',
+                        link_title: '社會型',
+                        courses: [{
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
                         }, {
-                            link_from: 'thing',
-                            link_to: 'thing_section',
-                            link_title: '事務型',
-                        }
-                    ],
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }, {
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }],
+
+
+                    }, {
+                        link_from: 'enterprise',
+                        link_to: 'enterprise_session',
+                        link_title: '企業型',
+                        courses: [{
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }, {
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }, {
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }],
+
+
+                    }, {
+                        link_from: 'thing',
+                        link_to: 'thing_session',
+                        link_title: '事務型',
+                        courses: [{
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }, {
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }, {
+                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
+                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            join: 9999,
+                            hour: 3,
+                            price: 660,
+                        }],
+
+                    }],
+
                     main_course: {
                         img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
                         course_title: '九個步驟快速提昇你的簡報力、溝通力',
@@ -198,7 +348,7 @@
                         hour: 3,
                         price: 660,
                     },
-                    course_card: [{
+                    hot_course: [{
                         img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
                         course_title: '九個步驟快速提昇簡報力',
                         join: 9999,
@@ -227,7 +377,10 @@
                         price: 770,
 
                     }, ],
+
+
                 }
+
 
             },
             methods: {
@@ -235,17 +388,6 @@
             },
         })
     </script>
-
-    <script>
-        $(".auto_slider").owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            items: 4,
-        });
-    </script>
-
 
 </body>
 

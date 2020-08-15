@@ -15,47 +15,94 @@
 </head>
 
 <body>
+    <script>
+        this.data = [
+            [{
+                    type: '',
+                    name: '資產',
+                    start: '期末餘額',
+                    end: '期初餘額'
+                },
+                {
+                    type: '',
+                    name: '負債和所有者權益(或股東權益）',
+                    start: '期末餘額',
+                    end: '期初餘額'
+                }
+            ],
+            [{
+                    type: '',
+                    name: '資產',
+                    start: 125000,
+                    end: 12534567
+                },
+                {
+                    type: '',
+                    name: '負債',
+                    start: 125000,
+                    end: 12534567
+                }
+            ],
+            [{
+                    type: '資產',
+                    name: '貨幣資金',
+                    start: 125000,
+                    end: 12534567
+                },
+                {
+                    type: '負債',
+                    name: '應付短期融資款',
+                    start: 125000,
+                    end: 12534567
+                }
+            ],
+            [{
+                    type: '資產',
+                    name: '其中：客戶存款',
+                    start: 125000,
+                    end: 12534567
+                },
+                {
+                    type: '',
+                    name: '所有者權益（或股東權益)',
+                    start: 125000,
+                    end: 12534567
+                }
+            ],
+            [{
+                    type: '資產',
+                    name: '',
+                    start: '',
+                    end: ''
+                },
+                {
+                    type: '所有者權益（或股東權益',
+                    name: '實收資本（或股本）',
+                    start: 125000,
+                    end: 12534567
+                }
+            ],
+            [{
+                    type: '資產',
+                    name: '資產總計',
+                    start: 111,
+                    end: 11
+                },
+                {
+                    type: '所有者權益（或股東權益',
+                    name: '資本公積',
+                    start: 125000,
+                    end: 12534567
+                }
+            ]
+        ]
+    </script>
 
-    <div class="col-md-12 owl-carousel owl-theme">
-        <div class="item" style="max-width: 450px; margin-right: 10px;">
-            <h4>1</h4><img src="https://picsum.photos/300/200">
-        </div>
-        <div class="item" style="max-width: 450px; margin-right: 10px;">
-            <h4>2</h4><img src="https://picsum.photos/300/200">
-        </div>
-        <div class="item" style="max-width: 350px; margin-right: 10px;">
-            <h4>3</h4><img src="https://picsum.photos/300/200">
-        </div>
-        <div class="item" style="max-width: 350px; margin-right: 10px;">
-            <h4>4</h4><img src="https://picsum.photos/300/200">
-        </div>
-        <div class="item" style="max-width: 350px; margin-right: 10px;">
-            <h4>5</h4><img src="https://picsum.photos/300/200">
-        </div>
-        <div class="item" style="max-width: 350px; margin-right: 10px;">
-            <h4>6</h4><img src="https://picsum.photos/300/200">
-        </div>
-    </div>
+
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
-    <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 4,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true
-        });
-        $('.play').on('click', function () {
-            owl.trigger('play.owl.autoplay', [1000])
-        })
-        $('.stop').on('click', function () {
-            owl.trigger('stop.owl.autoplay')
-        })
-    </script>
+
 </body>
 
 </html>

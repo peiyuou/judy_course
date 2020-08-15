@@ -702,7 +702,7 @@ div.course_session_title h2 {
   width: 300px;
   border-bottom: 2px solid #e8c300;
   padding-bottom: 10px;
-  margin-bottom: 30px;
+  margin: 50px 0 20px;
 }
 
 div.course_main_second div.course_nav {
@@ -738,7 +738,7 @@ div.course_main_second div.course_nav div.course_nav_container ul li a {
 
 div.course_main_second div.main_course {
   border: 1px solid green;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 div.course_main_second div.main_course div.main_course_pic {
@@ -763,6 +763,10 @@ div.course_main_second div.main_course div.main_course_content {
           justify-content: space-between;
 }
 
+div.course_main_second div.hot_course {
+  margin-bottom: 50px;
+}
+
 div.course_main_second ul.auto_slider {
   max-width: 1200px;
   display: -webkit-box;
@@ -778,6 +782,8 @@ div.course_main_second ul.auto_slider li.auto_slider_card {
   margin: 0 15px;
   -webkit-box-shadow: 3px 3px 5px #e0e0e0;
           box-shadow: 3px 3px 5px #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_pic img {
@@ -823,5 +829,100 @@ div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_c
 div.course_main_second ul.auto_slider li.auto_slider_card div.add_cart_btn button {
   width: 100%;
   border-radius: 0;
+}
+
+div.course_main_second div.intro_banner {
+  margin-bottom: 50px;
+}
+
+div.course_main_second div.intro_banner div.intro_banner_container div.intro_banner_title {
+  height: 200px;
+  background: pink;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 3px 3px 5px #e0e0e0;
+          box-shadow: 3px 3px 5px #e0e0e0;
+  margin: 20px 0;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_pic {
+  width: 30%;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_pic img {
+  width: 100%;
+  -webkit-box-align: middle;
+      -ms-flex-align: middle;
+          align-items: middle;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_content {
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_content p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_join i {
+  margin-right: 5px;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_join span {
+  font-size: 13px;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_msg div.type_time span.card_type {
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_msg div.price_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_msg div.price_btn span.card_price {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=course.css.map */

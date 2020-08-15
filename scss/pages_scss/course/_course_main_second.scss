@@ -1,9 +1,9 @@
 @import "../../_public_dontTouch/utils/variables";
 
 $course_title_margin_bottom: 20px;
-$course_sort_margin_bottom: 30px;
-$course_sort_padding_bottom:10px;
 $session_margin_bottom: 50px;
+$card_radius: 5px;
+
 
 div.course_main_banner {
     div.banner {
@@ -17,8 +17,8 @@ div.course_session_title {
     h2 {
         width: 300px;
         border-bottom: 2px solid #e8c300;
-        padding-bottom: $course_sort_padding_bottom;
-        margin-bottom: $course_sort_margin_bottom;
+        padding-bottom: 10px;
+        margin: 50px 0 20px;
     }
 }
 
@@ -90,6 +90,10 @@ div.course_main_second {
     }
 
     //hot_course
+    div.hot_course {
+        margin-bottom: $course_sort_margin_bottom;
+    }
+
     ul.auto_slider {
         max-width: 1200px;
         display: flex;
@@ -99,6 +103,10 @@ div.course_main_second {
             flex: 1;
             margin: 0 15px;
             box-shadow: $card_shadow;
+            border-radius: $card_radius;
+            overflow: hidden;
+
+
 
             div.auto_slider_card_pic {
                 img {
@@ -153,5 +161,112 @@ div.course_main_second {
             }
         }
     }
+
+    //intro_banner
+    div.intro_banner {
+        margin-bottom: $course_sort_margin_bottom;
+
+        div.intro_banner_container {
+            div.intro_banner_title {
+                height: 200px;
+                background: pink;
+            }
+        }
+    }
+
+    //courses
+    div.courses_session {
+        div.course_session_title {
+            h2 {}
+        }
+
+        div.course_session_contain {
+            ul {
+
+                li {
+                    display: flex;
+                    box-shadow: $card_shadow;
+                    margin: 20px 0;
+
+                    div.card_pic {
+                        width: 30%;
+
+                        img {
+                            width: 100%;
+                            align-items: middle;
+                        }
+                    }
+
+                    div.card_content {
+                        padding: 20px;
+                        flex-grow: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        p {
+                            font-weight: bold;
+                            font-size: 20px;
+                            margin-bottom: $course_title_margin_bottom;
+                        }
+
+                        div.card_content_scrb {
+                            div.card_content_join {
+
+                                i {
+                                    margin-right: 5px;
+                                }
+
+                                span {
+                                    font-size: 13px;
+                                }
+                            }
+
+                            div.card_content_msg {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-end;
+
+                                div.type_time {
+                                    span.card_type {
+                                        padding: 0 5px;
+                                        border-radius: 5px;
+                                    }
+
+                                    span.card_time {}
+                                }
+
+
+
+                                div.price_btn {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    span.card_price {
+                                        font-size: 30px;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    btn {}
+                                }
+
+
+                            }
+                        }
+                    }
+
+
+                    // div.add_cart_btn {
+                    //     btn {}
+                    // }
+                }
+            }
+        }
+    }
+
+
+
+
 
 }
