@@ -83,74 +83,6 @@ div.course div.cus_list {
   border: none;
 }
 
-div.course div.cus_list ul li div.cus_card a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 1px solid gray;
-  padding: 10px 0;
-}
-
-div.course div.cus_list ul li div.cus_card a div.card_img {
-  width: 200px;
-}
-
-div.course div.cus_list ul li div.cus_card a div.card_img img {
-  width: 100%;
-}
-
-div.course div.cus_list ul li div.cus_card a div.card_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5px 10px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-div.course div.cus_list ul li div.cus_card a div.card_content p {
-  font-weight: bold;
-}
-
-div.course div.cus_list ul li div.cus_card a div.card_content div.card_content_scrb div.card_content_join span {
-  font-size: 13px;
-  padding: 0 5px;
-}
-
-div.course div.cus_list ul li div.cus_card a div.card_content div.card_content_scrb div.card_content_msg {
-  margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-div.course div.cus_list ul li div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.card_type {
-  background: orange;
-  border-radius: 5px;
-  padding: 0 5px;
-  line-height: 20px;
-}
-
-div.course div.cus_list ul li div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.card_time {
-  margin-left: 10px;
-  padding: 0 5px;
-  line-height: 20px;
-}
-
-div.course div.cus_list ul li div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.card_price {
-  margin-left: auto;
-  font-size: 20px;
-  font-weight: bold;
-}
-
 div.course div.cus_list div.cus_total_price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -598,6 +530,74 @@ div.course_introduce div.cus_outline div.cus_outline_contain ol li:last-child {
   border-bottom: none;
 }
 
+div.course_introduce div.hot_course {
+  margin-bottom: 50px;
+}
+
+div.course_introduce div.hot_course ul.auto_slider {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card {
+  background: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 15px;
+  -webkit-box-shadow: 3px 3px 5px #e0e0e0;
+          box-shadow: 3px 3px 5px #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_pic img {
+  width: 100%;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content {
+  padding: 10px;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_join {
+  margin-bottom: 20px;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_join i {
+  margin-right: 5px;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_join span {
+  font-size: 13px;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_msg span.card_price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.add_cart_btn button {
+  width: 100%;
+  border-radius: 0;
+}
+
 div.course_slide ul.slide_contain {
   max-width: 900px;
   margin: 0 auto;
@@ -767,14 +767,14 @@ div.course_main_second div.hot_course {
   margin-bottom: 50px;
 }
 
-div.course_main_second ul.auto_slider {
+div.course_main_second div.hot_course ul.auto_slider {
   max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card {
   background: #fff;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -786,33 +786,33 @@ div.course_main_second ul.auto_slider li.auto_slider_card {
   overflow: hidden;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_pic img {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_pic img {
   width: 100%;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_content {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content {
   padding: 10px;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_content p {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content p {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_join {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_join {
   margin-bottom: 20px;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_join i {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_join i {
   margin-right: 5px;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_join span {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_join span {
   font-size: 13px;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_msg {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_msg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -821,12 +821,12 @@ div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_c
           justify-content: space-between;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_msg span.card_price {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content div.card_content_scrb div.card_content_msg span.card_price {
   font-size: 20px;
   font-weight: bold;
 }
 
-div.course_main_second ul.auto_slider li.auto_slider_card div.add_cart_btn button {
+div.course_main_second div.hot_course ul.auto_slider li.auto_slider_card div.add_cart_btn button {
   width: 100%;
   border-radius: 0;
 }
@@ -924,5 +924,73 @@ div.course_main_second div.courses_session div.course_session_contain ul li div.
 div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_msg div.price_btn span.card_price {
   font-size: 30px;
   margin-bottom: 10px;
+}
+
+div.cus_card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+
+div.cus_card a div.card_img {
+  width: 200px;
+}
+
+div.cus_card a div.card_img img {
+  width: 100%;
+}
+
+div.cus_card a div.card_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+div.cus_card a div.card_content p {
+  font-weight: bold;
+}
+
+div.cus_card a div.card_content div.card_content_scrb div.card_content_join span {
+  font-size: 13px;
+  padding: 0 5px;
+}
+
+div.cus_card a div.card_content div.card_content_scrb div.card_content_msg {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.card_type {
+  background: orange;
+  border-radius: 5px;
+  padding: 0 5px;
+  line-height: 20px;
+}
+
+div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.card_time {
+  margin-left: 10px;
+  padding: 0 5px;
+  line-height: 20px;
+}
+
+div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.card_price {
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=course.css.map */
