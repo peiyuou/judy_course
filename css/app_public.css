@@ -377,17 +377,17 @@ div.header_wrap header.header div.header_icon div.member i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ededed;
+  border-top: 1px solid #ededed;
 }
 
 .side_cart div.check_out_contain div.price_total_btn div.price_total {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   text-align: center;
 }
 
-.side_cart div.check_out_contain div.price_total_btn button.check_out {
+.side_cart div.check_out_contain div.price_total_btn a.check_out {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -395,9 +395,10 @@ div.header_wrap header.header div.header_icon div.member i {
   font-size: 18px;
   color: #fff;
   padding: 10px 0;
+  text-align: center;
 }
 
-.side_cart div.check_out_contain div.price_total_btn button.check_out:hover {
+.side_cart div.check_out_contain div.price_total_btn a.check_out:hover {
   background: #336AC6;
 }
 
