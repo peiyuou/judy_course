@@ -435,6 +435,34 @@ div.header_wrap header.header div.header_icon div.member i {
   header.header div.header_nav ul li {
     padding: 10px 0;
     text-align: center;
+    margin: 0 !important;
+  }
+  @-webkit-keyframes color {
+    0% {
+      background: linear-gradient(-45deg, #e4c8c8 40%, #c0c0f7 90%);
+    }
+    50% {
+      background: linear-gradient(-45deg, #e4c8c8 30%, #c0c0f7 50%);
+    }
+    100% {
+      background: linear-gradient(-45deg, #e4c8c8 60%, #c0c0f7 10%);
+    }
+  }
+  @keyframes color {
+    0% {
+      background: linear-gradient(-45deg, #e4c8c8 40%, #c0c0f7 90%);
+    }
+    50% {
+      background: linear-gradient(-45deg, #e4c8c8 30%, #c0c0f7 50%);
+    }
+    100% {
+      background: linear-gradient(-45deg, #e4c8c8 60%, #c0c0f7 10%);
+    }
+  }
+  header.header div.header_nav ul li:hover {
+    background: linear-gradient(124deg, #e4c8c8 90%, #c0c0f7 90%);
+    -webkit-animation: color 1s ease infinite;
+            animation: color 1s ease infinite;
   }
   header.header div.header_icon {
     margin-left: 0 !important;

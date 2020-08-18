@@ -36,20 +36,7 @@ $(document).ready(function () {
 
     });
 
-    // ------------
-    $(function () {
 
-        $('ul.header_nav_list > li:first-child').click(function () {
-            $('div.style_package').slideToggle();
-            $('ul.header_nav_list>li:first-child>a>.fas').toggleClass('rotate');
-        });
-
-        $('ul.header_nav_list > li:nth-child(2)').click(function () {
-            $('div.product_package').slideToggle();
-            $('ul.header_nav_list>li:nth-child(2)>a>.fas').toggleClass('rotate');
-        });
-
-    });
 
 
 

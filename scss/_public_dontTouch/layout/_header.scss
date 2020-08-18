@@ -254,15 +254,65 @@ div.header_wrap {
                 li {
                     padding: 10px 0;
                     text-align: center;
+                    margin: 0 !important;
+
+                    @keyframes color {
+                        0% {
+                            background: linear-gradient(-45deg, rgb(228, 200, 200) 40%, rgb(192, 192, 247)90%);
+                        }
+
+                        50% {
+                            background: linear-gradient(-45deg, rgb(228, 200, 200) 30%, rgb(192, 192, 247)50%);
+                        }
+
+                        100% {
+                            background: linear-gradient(-45deg, rgb(228, 200, 200) 60%, rgb(192, 192, 247)10%);
+                        }
+
+                        // 0% {
+                        //     background-position: 24% 0%
+                        // }
+
+                        // 50% {
+                        //     background-position: 77% 100%
+                        // }
+
+                        // 100% {
+                        //     background-position: 24% 0%
+                        // }
+                    }
+
+                    // @keyframes color {
+                    //     from {
+                    //         background: green;
+
+                    //     }
+
+                    //     to {
+                    //         background: yellow;
+                    //     }
+                    &:hover {
+                        // background: rgb(192, 192, 247);
+                        background: linear-gradient(124deg, rgb(228, 200, 200) 90%, rgb(192, 192, 247)90%);
+                        // background: blue;
+                        // animation: linear-gradient 3s infinite 1s;
+                        // transition: 3s ease-in-out ;
+                        animation: color 1s ease infinite;
+
+                    }
+
+
                 }
 
             }
+
+
         }
+
 
         div.header_icon {
             margin-left: 0 !important;
         }
-
     }
 
 
