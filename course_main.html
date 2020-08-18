@@ -277,11 +277,12 @@
                         <div class="row">
                             <li v-for="type in category" :id="type.link_from"
                                 class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-                                <a href="#">
-                                    <h3>
+                                <h3>
+                                    <span class="type_dot" :style="type.color"></span>
+                                    <a href="#">
                                         {{type.link_title}}
-                                    </h3>
-                                </a>
+                                    </a>
+                                </h3>
                             </li>
                         </div>
                     </ul>
@@ -404,7 +405,7 @@
                         link_from: 'practical',
                         link_to: 'practical_session',
                         link_title: '實作型',
-                        color: '#79BBB5',
+                        color: 'background: #79BBB5;',
                         courses: [{
                             img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
                             course_title: '九個步驟快速提昇你的簡報力、溝通力',
@@ -429,6 +430,7 @@
                         link_from: 'research',
                         link_to: 'research_session',
                         link_title: '研究型',
+                        color: 'background: #A0CADB;',
                         courses: [{
                             img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
                             course_title: '九個步驟快速提昇你的簡報力、溝通力',
@@ -453,6 +455,7 @@
                         link_from: 'art',
                         link_to: 'art_session',
                         link_title: '文藝型',
+                        color: 'background: #ECECEC;',
                         courses: [{
                             img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
                             course_title: '九個步驟快速提昇你的簡報力、溝通力',
@@ -478,6 +481,7 @@
                         link_from: 'social',
                         link_to: 'social_session',
                         link_title: '社會型',
+                        color: 'background: #F7EA92;',
                         courses: [{
                             img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
                             course_title: '九個步驟快速提昇你的簡報力、溝通力',
@@ -503,6 +507,7 @@
                         link_from: 'enterprise',
                         link_to: 'enterprise_session',
                         link_title: '企業型',
+                        color: 'background: #F4C3C5;',
                         courses: [{
                             img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
                             course_title: '九個步驟快速提昇你的簡報力、溝通力',
@@ -528,6 +533,7 @@
                         link_from: 'thing',
                         link_to: 'thing_session',
                         link_title: '事務型',
+                        color: 'background: #CCC5E3;',
                         courses: [{
                             img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
                             course_title: '九個步驟快速提昇你的簡報力、溝通力',
