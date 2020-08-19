@@ -49,10 +49,9 @@
 
 
 
-
-
-
     <div id="course_main">
+
+
         <!-- cart -->
         <div class="side_cart cart_off">
             <div class="cart_close">
@@ -270,6 +269,22 @@
         <!-- container -->
         <div class="course_main_second container">
 
+            <!-- parallax -->
+            <!-- <div class="parallax row"> -->
+            <div class="background col-xl-12">
+                <ul id="scene">
+                    <!-- <li class="layer" data-depth=".1"><img src="./img/course/parallax_img/man.png"></li>
+                    <li class="layer" data-depth=".2"><img src="./img/course/parallax_img/girl.png"></li>
+                    <li class="layer" data-depth=".3"><img src="./img/course/parallax_img/tree.png"></li> -->
+                    <li class="layer" style="z-index:1 ;"><img src="./img/course/parallax_img/man.png"></li>
+                    <li class="layer" style="z-index:2 ;"><img src="./img/course/parallax_img/girl.png"></li>
+                    <li class="layer" style="z-index:3 ;"><img src="./img/course/parallax_img/tree.png"></li>
+                </ul>
+            </div>
+            <!-- </div> -->
+
+
+
             <!-- course_nav -->
             <div class="course_nav row">
                 <div class="course_nav_container col-xl-12">
@@ -393,8 +408,16 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/header.js"></script>
-    <script src="./js/course/slide_to_session.js"></script>
     <script src="./js/course/owl_auto_slide.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script> -->
+    <!-- <script src="./js/course/parallax.js"></script> -->
+    <script src="./js/course/parallax_script.js"></script>
+
+    <!-- <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script> -->
+
     <script>
         new Vue({
             el: '#course_main',

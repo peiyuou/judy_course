@@ -5,11 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="../css/bootstrap_grid/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/app_public.css">
     <link rel="stylesheet" href="../css/course.css">
     <script src="https://kit.fontawesome.com/d18b20bddd.js" crossorigin="anonymous"></script>
+
+    <style>
+        div.background {
+            width: 100%;
+            height: 100vh;
+            background: url("../../../img/course/parallax_img/background.png");
+            /* overflow: hidden; */
+
+        }
+    </style>
+
 </head>
 
 <body>
@@ -17,6 +27,7 @@
 
     <!-- header -->
     <div class="header"></div>
+
 
 
     <!-- course_list -->
@@ -77,12 +88,34 @@
     <input type="submit" class="btn_third">
     <input type="submit">
 
+    <hr>
+
+
+    <div class="background">
+        <ul id="scene">
+            <li>
+                <img src="img/course/parallax_img/man.png" alt="" data-depth="0" class="layer">
+            </li>
+            <li>
+                <img src="img/course/parallax_img/girl.png" alt="" data-depth="0" class="layer">
+            </li>
+            <li>
+                <img src="img/course/parallax_img/tree.png" alt="" data-depth="0" class="layer">
+            </li>
+
+        </ul>
+    </div>
 
 
 
 
 
+    <script src="./js/course/parallax.js"></script>
 
+    <script>
+        // var scene = document.getElementById('scene');
+        // var parallax = new Parallax(scene);
+    </script>
 
 
 

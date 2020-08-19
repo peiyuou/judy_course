@@ -8,6 +8,42 @@
   max-width: 1200px;
 }
 
+.practical_bg_color {
+  background: #79BBB5;
+}
+
+.research_bg_color {
+  background: #A0CADB;
+}
+
+.art_bg_color {
+  background: #CCC5E3;
+}
+
+.social_bg_color {
+  background: #F4C3C5;
+}
+
+.thing_bg_color {
+  background: #E7995F;
+}
+
+.enterprise_bg_color {
+  background: #F7EA92;
+}
+
+.second_color1 {
+  background: #FFE56D;
+}
+
+.second_color2 {
+  background: #F6F3ED;
+}
+
+.second_color3 {
+  background: #BCEAFF;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,6 +208,10 @@ a {
 div.header_wrap {
   width: 100%;
   background: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 200;
 }
 
 div.header_wrap header.header {
@@ -188,11 +228,9 @@ div.header_wrap header.header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 10px 15px 0;
-  margin-bottom: 50px;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  z-index: 200;
   /* hamburger */
   /*
    * Spring
@@ -707,5 +745,157 @@ div.footer_wave svg.waves .parallax > use:nth-child(4) {
   h1 {
     font-size: 24px;
   }
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.main_side_bar {
+  width: 200px;
+  height: 100vh;
+  background: #F6F3ED;
+  margin-left: 20px;
+  border-radius: 20px;
+  padding: 60px 20px 0;
+  position: fixed;
+}
+
+div.main_side_bar ul {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.main_side_bar ul li {
+  margin: 10px 0;
+}
+
+div.main_side_bar ul li a {
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 5px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+div.main_side_bar ul li a span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+div.main_side_bar ul li:first-child a {
+  border: 2px solid #79BBB5;
+}
+
+div.main_side_bar ul li:first-child a span {
+  background: #79BBB5;
+}
+
+div.main_side_bar ul li:first-child a:hover {
+  background: #79BBB5;
+}
+
+div.main_side_bar ul li:first-child a:hover span {
+  background: #fff;
+}
+
+div.main_side_bar ul li:nth-child(2) a {
+  border: 2px solid #A0CADB;
+}
+
+div.main_side_bar ul li:nth-child(2) a span {
+  background: #A0CADB;
+}
+
+div.main_side_bar ul li:nth-child(2) a:hover {
+  background: #A0CADB;
+}
+
+div.main_side_bar ul li:nth-child(2) a:hover span {
+  background: #fff;
+}
+
+div.main_side_bar ul li:nth-child(3) a {
+  border: 2px solid #CCC5E3;
+}
+
+div.main_side_bar ul li:nth-child(3) a span {
+  background: #CCC5E3;
+}
+
+div.main_side_bar ul li:nth-child(3) a:hover {
+  background: #CCC5E3;
+}
+
+div.main_side_bar ul li:nth-child(3) a:hover span {
+  background: #fff;
+}
+
+div.main_side_bar ul li:nth-child(4) a {
+  border: 2px solid #F4C3C5;
+}
+
+div.main_side_bar ul li:nth-child(4) a span {
+  background: #F4C3C5;
+}
+
+div.main_side_bar ul li:nth-child(4) a:hover {
+  background: #F4C3C5;
+}
+
+div.main_side_bar ul li:nth-child(4) a:hover span {
+  background: #fff;
+}
+
+div.main_side_bar ul li:nth-child(5) a {
+  border: 2px solid #E7995F;
+}
+
+div.main_side_bar ul li:nth-child(5) a span {
+  background: #E7995F;
+}
+
+div.main_side_bar ul li:nth-child(5) a:hover {
+  background: #E7995F;
+}
+
+div.main_side_bar ul li:nth-child(5) a:hover span {
+  background: #fff;
+}
+
+div.main_side_bar ul li:nth-child(6) a {
+  border: 2px solid #F7EA92;
+}
+
+div.main_side_bar ul li:nth-child(6) a span {
+  background: #F7EA92;
+}
+
+div.main_side_bar ul li:nth-child(6) a:hover {
+  background: #F7EA92;
+}
+
+div.main_side_bar ul li:nth-child(6) a:hover span {
+  background: #fff;
 }
 /*# sourceMappingURL=app_public.css.map */
