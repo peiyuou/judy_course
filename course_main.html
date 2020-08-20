@@ -298,16 +298,16 @@
             </div>
 
             <!-- container -->
-            <div class="course_main_conainer col-xl-9">
+            <div class="course_main_container col-xl-9">
                 <div class="course_main_second container">
 
                     <!-- parallax -->
                     <!-- <div class="parallax row"> -->
-                    <div class="background col-xl-12">
+                    <div class="background col-xl-12" id="para_bg">
+                        <!-- <img src="img/course/parallax_img/background.png" alt=""> -->
                         <ul id="scene">
-                            <!-- <li class="layer" data-depth=".1"><img src="./img/course/parallax_img/man.png"></li>
-                                <li class="layer" data-depth=".2"><img src="./img/course/parallax_img/girl.png"></li>
-                                <li class="layer" data-depth=".3"><img src="./img/course/parallax_img/tree.png"></li> -->
+                            <li class="layer" style="z-index:1 ;"><img src="./img/course/parallax_img/background.png">
+                            </li>
                             <li class="layer" style="z-index:1 ;"><img src="./img/course/parallax_img/man.png"></li>
                             <li class="layer" style="z-index:2 ;"><img src="./img/course/parallax_img/girl.png"></li>
                             <li class="layer" style="z-index:3 ;"><img src="./img/course/parallax_img/tree.png"></li>
@@ -318,7 +318,7 @@
 
 
                     <!-- course_nav -->
-                    <div class="course_nav row">
+                    <!-- <div class="course_nav row">
                         <div class="course_nav_container col-xl-12">
                             <ul class="container">
                                 <div class="row">
@@ -334,7 +334,7 @@
                                 </div>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- main_course -->
                     <!-- <div class="main_course row">
                             <div class="course_session_title col-xl-12">
@@ -388,8 +388,7 @@
                             </div>
                         </div> -->
                     <!-- courses-->
-                    <div class="practical_session courses_session row" :id="section.link_to"
-                        v-for="section in category">
+                    <div class="practical_session courses_session row" :id="section.link_to" v-for="section in category">
                         <div class="course_session_title col-xl-12">
                             <h2>{{section.link_title}}</h2>
                         </div>
