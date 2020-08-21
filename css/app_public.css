@@ -758,7 +758,7 @@ div.main_side_bar {
   height: 100vh;
   background: #F6F3ED;
   border-radius: 20px;
-  padding: 60px 20px 0;
+  padding: 0px 20px 0;
   position: fixed;
 }
 

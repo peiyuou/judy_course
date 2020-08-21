@@ -777,7 +777,7 @@ div.course_introduce div.cus_outline div.cus_outline_contain h2 {
 }
 
 div.course_introduce div.cus_outline div.cus_outline_contain ol {
-  background: #ededed;
+  background: #F6F3ED;
   border-radius: 10px;
 }
 
@@ -789,6 +789,101 @@ div.course_introduce div.cus_outline div.cus_outline_contain ol li {
 
 div.course_introduce div.cus_outline div.cus_outline_contain ol li:last-child {
   border-bottom: none;
+}
+
+div.course_introduce div.feedback div.pro_feedback h2 {
+  width: 300px;
+  border-bottom: 2px solid #e8c300;
+  padding-bottom: 10px;
+  margin: 50px 0 20px;
+}
+
+div.course_introduce div.feedback div.pro_feedback ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+div.course_introduce div.feedback div.pro_feedback ul li {
+  background: #F6F3ED;
+  border-radius: 10px;
+}
+
+div.course_introduce div.feedback div.pro_feedback ul li div.pro_contain {
+  padding: 10px;
+}
+
+div.course_introduce div.feedback div.pro_feedback ul li div.pro_contain p {
+  line-height: 1.5;
+  border-bottom: 2px solid #ededed;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+div.course_introduce div.feedback div.pro_feedback ul li div.pro_contain div.pro_person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.course_introduce div.feedback div.pro_feedback ul li div.pro_contain div.pro_person div.pro_profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+div.course_introduce div.feedback div.pro_feedback ul li div.pro_contain div.pro_person div.pro_profile img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+div.course_introduce div.feedback div.stu_feedback h2 {
+  width: 300px;
+  border-bottom: 2px solid #e8c300;
+  padding-bottom: 10px;
+  margin: 50px 0 20px;
+}
+
+div.course_introduce div.feedback div.stu_feedback div.stu_contain {
+  padding: 10px;
+}
+
+div.course_introduce div.feedback div.stu_feedback div.stu_contain ul li {
+  margin: 10px 0;
+}
+
+div.course_introduce div.feedback div.stu_feedback div.stu_contain ul li span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+div.course_introduce div.feedback div.stu_feedback div.stu_contain ul li p {
+  background: #F6F3ED;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+div.course_introduce div.feedback div.stu_feedback div.stu_contain ul li p::before {
+  content: '';
+  display: inline-block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #F6F3ED;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 div.course_introduce div.hot_course {
