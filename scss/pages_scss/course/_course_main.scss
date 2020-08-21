@@ -3,6 +3,10 @@ $course_title_margin_bottom: 20px;
 $session_margin_bottom: 50px;
 $title_gap: 20px;
 $course-sort-margin-bottom: 20px;
+body#course_main_bg {
+    background-image: url(../../../img/course/main_bg/bg_1.png);
+}
+
 div.course_main_banner {
     div.banner {
         height: 200px;
@@ -121,6 +125,7 @@ div.course_main_second {
         div.course_session_contain {
             ul {
                 li {
+                    background: #fff;
                     display: flex;
                     box-shadow: $card_shadow;
                     margin: 20px 0;
@@ -128,7 +133,7 @@ div.course_main_second {
                         width: 30%;
                         img {
                             width: 100%;
-                            align-items: middle;
+                            vertical-align: middle;
                         }
                     }
                     div.card_content {
@@ -164,7 +169,7 @@ div.course_main_second {
                                 }
                                 div.price_btn {
                                     display: flex;
-                                    flex-direction: column;
+                                    // flex-direction: column;
                                     align-items: center;
                                     span.card_price {
                                         font-size: 30px;

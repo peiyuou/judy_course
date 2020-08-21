@@ -1,3 +1,7 @@
+body#course_main_bg {
+  background-image: url(../../../img/course/main_bg/bg_1.png);
+}
+
 div.course_main_banner div.banner {
   height: 200px;
   background: blue;
@@ -121,6 +125,7 @@ div.course_main_second div.intro_banner div.intro_banner_container div.intro_ban
 }
 
 div.course_main_second div.courses_session div.course_session_contain ul li {
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,9 +140,7 @@ div.course_main_second div.courses_session div.course_session_contain ul li div.
 
 div.course_main_second div.courses_session div.course_session_contain ul li div.card_pic img {
   width: 100%;
-  -webkit-box-align: middle;
-      -ms-flex-align: middle;
-          align-items: middle;
+  vertical-align: middle;
 }
 
 div.course_main_second div.courses_session div.course_session_contain ul li div.card_content {
@@ -192,10 +195,6 @@ div.course_main_second div.courses_session div.course_session_contain ul li div.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
