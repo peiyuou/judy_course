@@ -1,5 +1,5 @@
 body#course_main_bg {
-  background-image: url(../../../img/course/main_bg/bg_1.png);
+  background-image: url(../../../img/course/bg/main.png);
   background-size: 100%;
 }
 
@@ -547,31 +547,161 @@ div.course div.check_out div.check_out_contain div.check_out_btn {
           justify-content: center;
 }
 
+body#course_intro_bg {
+  background-image: url(../../../img/course/bg/intro.png);
+  background-size: 100%;
+}
+
 div.course_introduce {
   max-width: 900px;
   margin-bottom: 70px;
+  margin-top: 80px;
 }
 
-div.course_introduce div.cus_banner {
-  margin-bottom: 70px;
+div.course_introduce div.course_intro_banner {
+  margin-bottom: 50px;
 }
 
-div.course_introduce div.cus_banner div.course_intro_banner {
-  margin: 0 auto;
-  text-align: center;
+div.course_introduce div.course_intro_banner div.intro_banner {
+  -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
 }
 
-div.course_introduce div.cus_banner div.course_intro_banner h1 {
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-right: 20px;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_img {
+  margin-top: -50px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_img img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_img:hover {
+  margin-top: -60px;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_type_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_type_btn div.banner_type span {
+  font-size: 50px;
+  color: #F7EA92;
+  font-weight: bolder;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_type_btn div.banner_btn button {
+  background: #F6F3ED;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_type_btn div.banner_btn button i {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #bbbbbb;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_title {
+  border-bottom: 2px solid gray;
   margin-bottom: 30px;
 }
 
-div.course_introduce div.cus_banner div.course_intro_banner div.course_img {
-  margin: 0 auto;
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_title h1 {
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-div.course_introduce div.cus_banner div.course_intro_banner div.course_img img {
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_title div.banner_teacher_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_title div.banner_teacher_price div.banner_teacher_container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F7EA92;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_title div.banner_teacher_price div.banner_teacher_container a div.banner_teacher_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_title div.banner_teacher_price div.banner_teacher_container a div.banner_teacher_img img {
   width: 100%;
-  vertical-align: middle;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_title div.banner_teacher_price div.banner_teacher_container a span {
+  font-weight: bold;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_title div.banner_teacher_price div.banner_price p {
+  font-size: 30px;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_title div.banner_teacher_price div.banner_price p span {
+  font-size: 18px;
+}
+
+div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_content div.banner_describe p {
+  line-height: 1.5;
 }
 
 div.course_introduce div.cus_teacher {
