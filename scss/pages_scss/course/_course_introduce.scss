@@ -3,6 +3,13 @@ $content_max_width: 900px;
 $teacher_profile_width: 150px;
 $section_gap: 70px;
 $title_gap: 20px;
+@mixin intro_h2 {
+    width: 300px;
+    border-bottom: 2px solid #e8c300;
+    padding-bottom: 10px;
+    margin: 50px 0 20px;
+}
+
 body#course_intro_bg {
     background-image: url(../../../img/course/bg/intro.png);
     background-size: 100%;
@@ -148,7 +155,7 @@ div.course_introduce {
             flex-direction: column;
             justify-content: center;
             h2 {
-                margin-bottom: $title_gap;
+                @include intro_h2;
             }
             p {
                 line-height: 1.5;
@@ -160,7 +167,7 @@ div.course_introduce {
         margin-bottom: $section_gap;
         div.learn_list {
             h2 {
-                margin-bottom: $title_gap;
+                @include intro_h2;
             }
             ul {
                 li {
@@ -170,7 +177,7 @@ div.course_introduce {
         }
         div.suitable_list {
             h2 {
-                margin-bottom: $title_gap;
+                @include intro_h2;
             }
             ul {
                 li {
@@ -186,7 +193,7 @@ div.course_introduce {
         div.cus_outline_contain {
             width: 100%;
             h2 {
-                margin-bottom: $title_gap;
+                @include intro_h2;
             }
             ol {
                 background: $second_color2;
@@ -346,5 +353,37 @@ div.course_introduce {
                 }
             }
         }
+    }
+}
+
+// rwd
+@media(max-width:992px) {
+    // 學習到
+    div.suitable_list {
+        margin-bottom: 30px;
+    }
+    // feedback
+    div.course_introduce div.feedback div.pro_feedback ul {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:920px) {
+    // banner
+    div.course_intro_banner {
+        div.intro_banner {
+            flex-direction: column;
+        }
+    }
+}
+
+@media(max-width:376px) {
+    // banner
+    div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_type_btn {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_type_btn div.banner_type span {
+        font-size: 20px;
     }
 }

@@ -736,7 +736,10 @@ div.course_introduce div.cus_teacher div.teacher_intro {
 }
 
 div.course_introduce div.cus_teacher div.teacher_intro h2 {
-  margin-bottom: 20px;
+  width: 300px;
+  border-bottom: 2px solid #e8c300;
+  padding-bottom: 10px;
+  margin: 50px 0 20px;
 }
 
 div.course_introduce div.cus_teacher div.teacher_intro p {
@@ -748,7 +751,10 @@ div.course_introduce div.cus_learn {
 }
 
 div.course_introduce div.cus_learn div.learn_list h2 {
-  margin-bottom: 20px;
+  width: 300px;
+  border-bottom: 2px solid #e8c300;
+  padding-bottom: 10px;
+  margin: 50px 0 20px;
 }
 
 div.course_introduce div.cus_learn div.learn_list ul li {
@@ -756,7 +762,10 @@ div.course_introduce div.cus_learn div.learn_list ul li {
 }
 
 div.course_introduce div.cus_learn div.suitable_list h2 {
-  margin-bottom: 20px;
+  width: 300px;
+  border-bottom: 2px solid #e8c300;
+  padding-bottom: 10px;
+  margin: 50px 0 20px;
 }
 
 div.course_introduce div.cus_learn div.suitable_list ul li {
@@ -773,7 +782,10 @@ div.course_introduce div.cus_outline div.cus_outline_contain {
 }
 
 div.course_introduce div.cus_outline div.cus_outline_contain h2 {
-  margin-bottom: 20px;
+  width: 300px;
+  border-bottom: 2px solid #e8c300;
+  padding-bottom: 10px;
+  margin: 50px 0 20px;
 }
 
 div.course_introduce div.cus_outline div.cus_outline_contain ol {
@@ -952,6 +964,36 @@ div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.auto_
 div.course_introduce div.hot_course ul.auto_slider li.auto_slider_card div.add_cart_btn button {
   width: 100%;
   border-radius: 0;
+}
+
+@media (max-width: 992px) {
+  div.suitable_list {
+    margin-bottom: 30px;
+  }
+  div.course_introduce div.feedback div.pro_feedback ul {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 920px) {
+  div.course_intro_banner div.intro_banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 376px) {
+  div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_type_btn {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+  div.course_introduce div.course_intro_banner div.intro_banner div.intro_banner_pic div.banner_type_btn div.banner_type span {
+    font-size: 20px;
+  }
 }
 
 div.cus_card a {
