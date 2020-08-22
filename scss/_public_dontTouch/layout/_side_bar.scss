@@ -93,28 +93,28 @@ div.main_side_bar {
     }
 }
 
-@media(max-width:1080px) {
-    div.main_side_bar {
-        position: inherit;
-        width: inherit;
-        position: absolute;
-        border-radius: 0;
-        height: inherit;
-        padding: 0;
-        width: 100%;
-        overflow-x: scroll;
-        ul {
-            flex-direction: row;
-            margin-bottom: 0px;
-            li {
-                width: 134%;
-                a {
-                    padding: 10px 30px;
-                }
-            }
-        }
-        div.side_bar_img {
-            display: none;
-        }
-    }
-}
+// @media(max-width:1200px) {
+//     div.main_side_bar {
+//         position: inherit;
+//         width: inherit;
+//         // position: absolute;
+//         border-radius: 0;
+//         height: inherit;
+//         padding: 0;
+//         width: 100%;
+//         overflow-x: scroll;
+//         ul {
+//             flex-direction: row;
+//             margin-bottom: 0px;
+//             li {
+//                 width: 134%;
+//                 a {
+//                     padding: 10px 30px;
+//                 }
+//             }
+//         }
+//         div.side_bar_img {
+//             display: none;
+//         }
+//     }
+// }

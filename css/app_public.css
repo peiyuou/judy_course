@@ -897,33 +897,4 @@ div.main_side_bar ul li:nth-child(6) a:hover {
 div.main_side_bar ul li:nth-child(6) a:hover span {
   background: #fff;
 }
-
-@media (max-width: 1080px) {
-  div.main_side_bar {
-    position: inherit;
-    width: inherit;
-    position: absolute;
-    border-radius: 0;
-    height: inherit;
-    padding: 0;
-    width: 100%;
-    overflow-x: scroll;
-  }
-  div.main_side_bar ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-bottom: 0px;
-  }
-  div.main_side_bar ul li {
-    width: 134%;
-  }
-  div.main_side_bar ul li a {
-    padding: 10px 30px;
-  }
-  div.main_side_bar div.side_bar_img {
-    display: none;
-  }
-}
 /*# sourceMappingURL=app_public.css.map */

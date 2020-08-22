@@ -206,6 +206,53 @@ div.course_main_second div.courses_session div.course_session_contain ul li div.
   margin-bottom: 10px;
 }
 
+@media (max-width: 1199px) {
+  div.side_bar_container {
+    position: fixed;
+    z-index: 200;
+    left: 0;
+  }
+  div.side_bar_container div.main_side_bar {
+    position: inherit;
+    width: inherit;
+    border-radius: 0;
+    height: inherit;
+    padding: 0;
+    width: 100%;
+  }
+  div.side_bar_container div.main_side_bar ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.side_bar_container div.main_side_bar ul li {
+    margin: 10px;
+  }
+  div.side_bar_container div.main_side_bar ul li a {
+    padding: 10px 30px;
+  }
+  div.side_bar_container div.main_side_bar div.side_bar_img {
+    display: none;
+  }
+  div.course_main_container {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1060px) {
+  div.side_bar_container div.main_side_bar {
+    overflow-x: scroll;
+  }
+}
+
 div.course {
   border: none;
 }
