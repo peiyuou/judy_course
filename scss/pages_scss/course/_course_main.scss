@@ -25,6 +25,16 @@ div.course_session_title {
 }
 
 div.course_main_second {
+    // go_test
+    div.go_test {
+        background: rgba(85, 85, 94, 0.459);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 200;
+        border-radius: 10px 10px 0 0;
+    }
     // parallax
     div.background {
         width: 100%;
@@ -173,8 +183,7 @@ div.course_main_second {
                                     // flex-direction: column;
                                     align-items: center;
                                     span.card_price {
-                                        font-size: 30px;
-                                        margin-bottom: 10px;
+                                        font-size: 20px;
                                     }
                                     btn {}
                                 }

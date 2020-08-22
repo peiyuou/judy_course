@@ -15,6 +15,16 @@ div.course_session_title h2 {
   margin: 50px 0 20px;
 }
 
+div.course_main_second div.go_test {
+  background: rgba(85, 85, 94, 0.459);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 200;
+  border-radius: 10px 10px 0 0;
+}
+
 div.course_main_second div.background {
   width: 100%;
   overflow: hidden;
@@ -202,8 +212,7 @@ div.course_main_second div.courses_session div.course_session_contain ul li div.
 }
 
 div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_msg div.price_btn span.card_price {
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 @media (max-width: 1199px) {
