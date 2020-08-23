@@ -280,15 +280,16 @@ div.course_main_second div.courses_session div.course_session_contain ul li div.
   }
 }
 
-div.course {
+div.course_order_list {
+  margin-top: 50px;
   border: none;
 }
 
-div.course div.cus_list {
+div.course_order_list div.cus_list {
   border: none;
 }
 
-div.course div.cus_list div.cus_total_price {
+div.course_order_list div.cus_list div.cus_total_price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,32 +302,32 @@ div.course div.cus_list div.cus_total_price {
   padding-top: 50px;
 }
 
-div.course div.cus_list div.cus_total_price span {
+div.course_order_list div.cus_list div.cus_total_price span {
   display: inline-block;
   padding: 0 5px;
 }
 
-div.course div.cus_list div.cus_total_price span.total {
+div.course_order_list div.cus_list div.cus_total_price span.total {
   font-size: 15px;
   margin-right: 10px;
 }
 
-div.course div.cus_list div.cus_total_price span.final_price {
+div.course_order_list div.cus_list div.cus_total_price span.final_price {
   font-size: 26px;
   font-weight: bold;
   color: red;
 }
 
-div.course div.cus_list div.cus_total_price span.origin_price {
+div.course_order_list div.cus_list div.cus_total_price span.origin_price {
   font-size: 15px;
   text-decoration: line-through;
 }
 
-div.course div.cus_list div.cus_total_price span.discount {
+div.course_order_list div.cus_list div.cus_total_price span.discount {
   font-size: 15px;
 }
 
-div.course div.check_out div.check_out_contain {
+div.course_order_list div.check_out_contain {
   color: #fff;
   width: 80%;
   margin: 0 auto;
@@ -335,17 +336,17 @@ div.course div.check_out div.check_out_contain {
   padding: 0px 20px 30px;
 }
 
-div.course div.check_out div.check_out_contain div.check_out_title h3 {
+div.course_order_list div.check_out_contain div.check_out_title h3 {
   padding: 30px 0 40px;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card {
+div.course_order_list div.check_out_contain div.credit_card {
   position: relative;
   -webkit-perspective: 1000;
           perspective: 1000;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip {
+div.course_order_list div.check_out_contain div.credit_card div.flip {
   width: 300px;
   height: 200px;
   -webkit-transition: 0.6s ease-in-out;
@@ -356,7 +357,7 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip {
   margin: 0 auto;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip:hover {
+div.course_order_list div.check_out_contain div.credit_card div.flip:hover {
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotateY(180deg);
@@ -364,7 +365,7 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip:hover {
   transform-origin: center;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_front {
   width: 300px;
   height: 200px;
   background: linear-gradient(135deg, #3c5e92, #1b2c4b);
@@ -391,18 +392,18 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip div.card
       justify-content: space-around;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.account_num {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_front div.account_num {
   text-align: center;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.account_num span {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_front div.account_num span {
   padding: 0 10px;
   font-size: 20px;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.owner_name {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_front div.owner_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,17 +415,17 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip div.card
           align-items: flex-end;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.owner_name div.credit_logo {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_front div.owner_name div.credit_logo {
   width: 80px;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_front div.owner_name div.credit_logo img {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_front div.owner_name div.credit_logo img {
   width: 100%;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_back {
   width: 300px;
   height: 200px;
   background: linear-gradient(135deg, #3c5e92, #1b2c4b);
@@ -453,28 +454,28 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip div.card
           transform: rotateY(180deg);
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.black_stripe {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_back div.black_stripe {
   height: 40px;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.788));
   width: 100%;
   margin: 30px 0 10px 0;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.white_stripe {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_back div.white_stripe {
   background: #fff;
   border-radius: 5px;
   margin: 0 15px;
   height: 30px;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.white_stripe span {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_back div.white_stripe span {
   display: inline-block;
   width: 100%;
   text-align: right;
   padding: 5px 10px 0;
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.credit_logo {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_back div.credit_logo {
   width: 80px;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -484,15 +485,15 @@ div.course div.check_out div.check_out_contain div.credit_card div.flip div.card
           transform: translateY(10px);
 }
 
-div.course div.check_out div.check_out_contain div.credit_card div.flip div.card_back div.credit_logo img {
+div.course_order_list div.check_out_contain div.credit_card div.flip div.card_back div.credit_logo img {
   width: 100%;
 }
 
-div.course div.check_out div.check_out_contain div.form {
+div.course_order_list div.check_out_contain div.form {
   margin-top: 50px;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_name {
+div.course_order_list div.check_out_contain div.form form div.form_name {
   border: 1px solid #fff;
   padding: 10px;
   margin: 20px 10px;
@@ -505,11 +506,11 @@ div.course div.check_out div.check_out_contain div.form form div.form_name {
           flex-direction: column;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_name label {
+div.course_order_list div.check_out_contain div.form form div.form_name label {
   padding-bottom: 10px;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_name input {
+div.course_order_list div.check_out_contain div.form form div.form_name input {
   background: #c4d9e4;
   outline: none;
   border: none;
@@ -517,7 +518,7 @@ div.course div.check_out div.check_out_contain div.form form div.form_name input
   border-radius: 5px;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_account {
+div.course_order_list div.check_out_contain div.form form div.form_account {
   border: 1px solid #fff;
   padding: 10px;
   margin: 20px 10px;
@@ -530,11 +531,11 @@ div.course div.check_out div.check_out_contain div.form form div.form_account {
           flex-direction: column;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_account label {
+div.course_order_list div.check_out_contain div.form form div.form_account label {
   padding-bottom: 10px;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_account div.account_input {
+div.course_order_list div.check_out_contain div.form form div.form_account div.account_input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,25 +544,25 @@ div.course div.check_out div.check_out_contain div.form form div.form_account di
           align-items: center;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_account div.account_input input {
+div.course_order_list div.check_out_contain div.form form div.form_account div.account_input input {
   background: #c4d9e4;
   outline: none;
   border: none;
   padding: 5px;
   border-radius: 5px;
-  width: 50px;
+  width: 20%;
   margin: 0 10px;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_account div.account_input input:first-child {
+div.course_order_list div.check_out_contain div.form form div.form_account div.account_input input:first-child {
   margin-left: 0;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_account div.account_input input:last-child {
+div.course_order_list div.check_out_contain div.form form div.form_account div.account_input input:last-child {
   margin-right: 0;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_exp {
+div.course_order_list div.check_out_contain div.form form div.form_exp {
   border: 1px solid #fff;
   padding: 10px;
   margin: 20px 10px;
@@ -575,14 +576,14 @@ div.course div.check_out div.check_out_contain div.form form div.form_exp {
   flex-direction: row;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_exp div.c_exp_date div.c_select {
+div.course_order_list div.check_out_contain div.form form div.form_exp div.c_exp_date div.c_select {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_exp div.c_exp_date div.c_select select {
+div.course_order_list div.check_out_contain div.form form div.form_exp div.c_exp_date div.c_select select {
   background: #c4d9e4;
   outline: none;
   border: none;
@@ -591,7 +592,7 @@ div.course div.check_out div.check_out_contain div.form form div.form_exp div.c_
   margin-right: 30px;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_exp div.c_ccv {
+div.course_order_list div.check_out_contain div.form form div.form_exp div.c_ccv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,10 +600,10 @@ div.course div.check_out div.check_out_contain div.form form div.form_exp div.c_
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 75px;
+  margin-left: auto;
 }
 
-div.course div.check_out div.check_out_contain div.form form div.form_exp div.c_ccv input {
+div.course_order_list div.check_out_contain div.form form div.form_exp div.c_ccv input {
   margin-top: 10px;
   background: #c4d9e4;
   outline: none;
@@ -612,13 +613,25 @@ div.course div.check_out div.check_out_contain div.form form div.form_exp div.c_
   width: 50px;
 }
 
-div.course div.check_out div.check_out_contain div.check_out_btn {
+div.course_order_list div.check_out_contain div.check_out_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 991px) {
+  div.course_order_list div.check_out_contain {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  div.course_order_list div.check_out_contain {
+    width: 100%;
+  }
 }
 
 body#course_intro_bg {
@@ -1136,6 +1149,21 @@ div.cus_card a div.card_content div.card_content_scrb div.card_content_msg span.
   margin-left: auto;
   font-size: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 499px) {
+  div.cus_list ul li {
+    margin-bottom: 20px;
+  }
+  div.cus_list ul li div.cus_card a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.cus_list ul li div.cus_card a div.card_img {
+    width: 100%;
+  }
 }
 
 div.hot_course {
