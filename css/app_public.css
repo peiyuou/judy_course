@@ -508,10 +508,9 @@ div.header_wrap header.header div.header_icon div.member i {
 }
 
 .side_cart {
-  border: 1px solid pink;
   width: 400px;
   height: 100vh;
-  background: #fff;
+  background: #F6F3ED;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -535,10 +534,20 @@ div.header_wrap header.header div.header_icon div.member i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 15px 0;
+}
+
+.side_cart div.cart_close span {
+  font-size: 20px;
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .side_cart div.cart_close button {
@@ -550,11 +559,27 @@ div.header_wrap header.header div.header_icon div.member i {
 .side_cart div.cart_course {
   margin: 10px;
   overflow-y: scroll;
+  height: 100%;
+}
+
+.side_cart div.cart_course ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
 }
 
 .side_cart div.cart_course ul li {
   -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
   margin: 10px 0;
 }
 
@@ -579,16 +604,16 @@ div.header_wrap header.header div.header_icon div.member i {
   background: #FCDA27;
 }
 
+.side_cart div.check_out_contain {
+  background: #F6F3ED;
+}
+
 .side_cart div.check_out_contain div.discount_title {
-  background: #ededed;
+  background: #FFE56D;
 }
 
 .side_cart div.check_out_contain div.discount_title p {
   padding: 5px;
-}
-
-.side_cart div.check_out_contain div.price_check {
-  background: #fff;
 }
 
 .side_cart div.check_out_contain div.price_check ul li {
