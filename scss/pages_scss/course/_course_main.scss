@@ -26,14 +26,29 @@ div.course_session_title {
 
 div.course_main_second {
     // go_test
-    div.go_test {
-        background: rgba(85, 85, 94, 0.459);
+    div#go_test {
+        background: rgba(85, 85, 94, 0.884);
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
         z-index: 200;
         border-radius: 10px 10px 0 0;
+        padding: 20px 0;
+        text-align: center;
+        transition: .6s ease-in-out;
+        span {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        button {
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+    ._off {
+        transform: translateY(100%);
     }
     // parallax
     div.background {

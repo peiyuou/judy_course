@@ -300,10 +300,10 @@
                 <div class="course_main_container">
                     <div class="course_main_second container">
                         <!-- go_test -->
-                        <div class="go_test">
+                        <div id="go_test">
                             <span>還不知道該選擇的課程嗎?</span>
-                            <a href="#">前往測驗</a>
-                            <button class="_off">X</button>
+                            <a href="text.html" class="btn_primary">前往測驗</a>
+                            <button id="close_test"><i class="far fa-times-circle"></i>關閉</button>
                         </div>
 
 
@@ -458,13 +458,14 @@
     <script src="./js/header.js"></script>
     <script src="./js/course/owl_auto_slide.js"></script>
     <script src="./js/course/parallax_script.js"></script>
-    <script src="./js/"></script>
-
-    <!-- <script>
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
-    </script> -->
-
+    <script src="./js/course/course_main.js"></script>
+    <script>
+        $(window).ready(function() {
+            $('#close_test').click(function() {
+                $('#go_test').addClass('_off');
+            });
+        });
+    </script>
     <script>
         new Vue({
             el: '#course_main',
