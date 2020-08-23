@@ -1296,4 +1296,74 @@ div.hot_course ul.auto_slider li.auto_slider_card div.auto_slider_card_content d
   font-size: 18px;
   line-height: 50px;
 }
+
+div.check_bg div.check_order_center {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.check_bg div.check_order_center div.check_order_contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.check_bg div.check_order_center div.check_order_contain fieldset {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #F6F3ED;
+  margin: 0 auto 20px;
+}
+
+div.check_bg div.check_order_center div.check_order_contain fieldset legend {
+  text-align: center;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div.check_bg div.check_order_center div.check_order_contain fieldset table {
+  background: #fff;
+  border-radius: 5px;
+}
+
+div.check_bg div.check_order_center div.check_order_contain fieldset table tr {
+  margin: 10px 0;
+}
+
+div.check_bg div.check_order_center div.check_order_contain fieldset table tr th {
+  border-right: 1px solid gray;
+  padding: 10px 30px;
+}
+
+div.check_bg div.check_order_center div.check_order_contain fieldset table tr td {
+  padding: 10px 100px;
+}
+
+div.check_bg div.check_order_center div.check_order_contain p {
+  margin-bottom: 20px;
+}
+
+div.check_bg div.check_order_center div.check_order_contain div.link_btn a {
+  margin: 0 10px;
+}
 /*# sourceMappingURL=course.css.map */
