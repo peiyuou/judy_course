@@ -155,7 +155,7 @@ div.course_main_second div.courses_session div.course_session_contain ul li {
   display: flex;
   -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 div.course_main_second div.courses_session div.course_session_contain ul li div.card_pic {
@@ -189,6 +189,10 @@ div.course_main_second div.courses_session div.course_session_contain ul li div.
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_join {
+  margin-bottom: 10px;
 }
 
 div.course_main_second div.courses_session div.course_session_contain ul li div.card_content div.card_content_scrb div.card_content_join i {
@@ -308,6 +312,9 @@ div.course_main_second div.courses_session div.course_session_contain ul li div.
 @media (max-width: 670px) {
   div.side_bar_container div.main_side_bar {
     overflow-x: scroll;
+  }
+  div.side_bar_container div.main_side_bar::-webkit-scrollbar {
+    display: none;
   }
   div.side_bar_container div.main_side_bar ul {
     width: -webkit-max-content;
@@ -1364,11 +1371,7 @@ div#check_order {
   background-image: url(../../../img/course/bg/check.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh-70px);
-}
-
-div.check_bg div.check_order_center {
-  margin-top: 50px;
+  height: calc(100vh - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

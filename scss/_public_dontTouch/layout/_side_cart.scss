@@ -71,6 +71,9 @@ div.side_cart {
             }
         }
     }
+    div.cart_course::-webkit-scrollbar {
+        display: none;
+    }
     div.check_out_contain {
         background: $second_color2;
         div.discount_title {

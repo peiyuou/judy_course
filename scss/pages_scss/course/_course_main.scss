@@ -137,7 +137,7 @@ div.course_main_second {
                     background: #fff;
                     display: flex;
                     box-shadow: $card_shadow;
-                    margin: 20px 0;
+                    margin: 30px 0;
                     div.card_pic {
                         width: 30%;
                         img {
@@ -159,6 +159,7 @@ div.course_main_second {
                         }
                         div.card_content_scrb {
                             div.card_content_join {
+                                margin-bottom: 10px;
                                 i {
                                     margin-right: 5px;
                                 }
@@ -270,6 +271,9 @@ div.course_main_second {
 @media(max-width:670px) {
     div.side_bar_container div.main_side_bar {
         overflow-x: scroll;
+    }
+    div.side_bar_container div.main_side_bar::-webkit-scrollbar {
+        display: none
     }
     div.side_bar_container div.main_side_bar ul {
         width: max-content;

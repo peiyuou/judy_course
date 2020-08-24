@@ -3,16 +3,14 @@ div#check_order {
     background-image: url(../../../img/course/bg/check.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh-70px);
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.check_bg {
     div.check_order_center {
-        margin-top: 50px;
-        // border: $outline1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         div.check_order_contain {
             // border: $outline3;
             display: flex;

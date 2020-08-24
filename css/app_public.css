@@ -604,6 +604,10 @@ div.side_cart div.cart_course ul li div.cus_card div.remove button:hover {
   background: #FCDA27;
 }
 
+div.side_cart div.cart_course::-webkit-scrollbar {
+  display: none;
+}
+
 div.side_cart div.check_out_contain {
   background: #F6F3ED;
 }
