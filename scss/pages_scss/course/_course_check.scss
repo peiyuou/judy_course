@@ -1,11 +1,11 @@
 @import "../../_public_dontTouch/utils/variables";
-// body#check_bg {
-//     background-image: url(../../../img/course/bg/check.png);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     width: 100%;
-//     height: 100%;
-// }
+div#check_order {
+    background-image: url(../../../img/course/bg/check.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh-70px);
+}
+
 div.check_bg {
     div.check_order_center {
         margin-top: 50px;
@@ -20,11 +20,12 @@ div.check_bg {
             justify-content: center;
             align-items: center;
             fieldset {
-                border: $outline1;
+                // border: $outline1;
                 border-radius: 5px;
-                padding: 20px;
+                padding: 10px 0;
                 background-color: $second_color2;
                 margin: 0 auto 20px;
+                background: rgba(255, 255, 255, 0.7);
                 legend {
                     text-align: center;
                     padding: 0 20px;
@@ -33,13 +34,17 @@ div.check_bg {
                 }
                 table {
                     // border: $outline2;
-                    background: #fff;
+                    // background: #fff;
                     border-radius: 5px;
                     tr {
                         margin: 10px 0;
+                        border-bottom: 3px solid $social_color;
+                        &:last-child {
+                            border-bottom: 0;
+                        }
                         // border: $outline2;
                         th {
-                            border-right: $outline1;
+                            // border-right: $outline1;
                             padding: 10px 30px;
                         }
                         td {

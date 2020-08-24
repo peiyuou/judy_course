@@ -1,4 +1,4 @@
-.side_cart {
+div.side_cart {
     // border: $outline2;
     width: 400px;
     height: 100vh;
@@ -7,7 +7,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    z-index: 200;
+    z-index: 300;
     transition: .6s ease-in-out;
     padding: 10 0px;
     display: flex;
@@ -119,4 +119,11 @@
 
 .cart_off {
     transform: translateX(100%);
+}
+
+@media(max-width:400px) {
+    div.side_cart {
+        width: 100%;
+        background: #f6f3ede0;
+    }
 }

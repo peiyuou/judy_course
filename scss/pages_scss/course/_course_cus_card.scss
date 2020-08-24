@@ -160,12 +160,18 @@
                                             width: $hot_course_btn_width;
                                             height: $hot_course_btn_width;
                                             border-radius: $hot_course_btn_width;
-                                            background: #fff;
+                                            background: #336AC6;
                                             box-shadow: $card_shadow;
                                             i {
-                                                color: rgb(81, 173, 104);
+                                                color: #fff;
                                                 font-size: 18px;
                                                 line-height: 50px;
+                                            }
+                                            &:hover {
+                                                // background: #fff;
+                                                i {
+                                                    color: $second_color1;
+                                                }
                                             }
                                         }
                                     }

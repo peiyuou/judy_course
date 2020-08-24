@@ -77,44 +77,6 @@ div.main_side_bar {
                     @include main_side_bar_color($enterprise_color);
                 }
             }
-            // &:first-child a {
-            //     border: 2px solid $practical_color;
-            //     span {
-            //         background: $practical_color;
-            //     }
-            //     &:hover {
-            //         background: $practical_color;
-            //         span {
-            //             background: #fff;
-            //         }
-            //     }
-            // }
         }
     }
 }
-
-// @media(max-width:1200px) {
-//     div.main_side_bar {
-//         position: inherit;
-//         width: inherit;
-//         // position: absolute;
-//         border-radius: 0;
-//         height: inherit;
-//         padding: 0;
-//         width: 100%;
-//         overflow-x: scroll;
-//         ul {
-//             flex-direction: row;
-//             margin-bottom: 0px;
-//             li {
-//                 width: 134%;
-//                 a {
-//                     padding: 10px 30px;
-//                 }
-//             }
-//         }
-//         div.side_bar_img {
-//             display: none;
-//         }
-//     }
-// }
