@@ -228,26 +228,26 @@
                                     <div class="col-xl-12">
                                         <div class="course_session_contain">
                                             <ul>
-                                                <li class="auto_slider_card " v-for="card in section.courses">
+                                                <li class="auto_slider_card " v-for="item in section.courses">
                                                     <div class="card_pic">
                                                         <a href="#">
-                                                            <img :src="card.img" alt="">
+                                                            <img :src="item.img" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="card_content">
-                                                        <p>{{card.course_title}}</p>
+                                                        <p>{{item.course_title}}</p>
                                                         <div class="card_content_scrb">
                                                             <div class="card_content_join">
-                                                                <i class="fas fa-user-friends"></i><span>{{card.join}}人已參與此課程</span>
+                                                                <i class="fas fa-user-friends"></i><span>{{item.join}}人已參與此課程</span>
                                                             </div>
                                                             <div class="card_content_msg">
                                                                 <div class="type_time">
-                                                                    <span class="card_type " style="background:orange;">實作型</span>
-                                                                    <span class="card_time">總計{{card.hour}}小時</span>
+                                                                    <span class="card_type " :style="item.color">{{item.type}}</span>
+                                                                    <span class="card_time">總計{{item.hour}}小時</span>
                                                                 </div>
 
                                                                 <div class="price_btn ">
-                                                                    <span class="card_price">NT${{card.price}}</span>
+                                                                    <span class="card_price">NT${{item.price}}</span>
                                                                     <div class="add_cart_btn">
                                                                         <button>
                                                                             <i class="fas fa-shopping-cart"></i>
@@ -337,33 +337,24 @@
                         link_title: '實作型',
                         // color: 'background: #79BBB5;',
                         courses: [{
-
-
-
+                            id: 5,
                             img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_title: '實作型',
+                            course_title: '九個步驟快速提昇簡報力',
+                            type: '實作型',
                             color: 'background: #79BBB5;',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
                             join: 9999,
                             hour: 3,
                             price: 660,
                         }, {
+                            id: 6,
                             img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_title: '實作型',
+                            course_title: '九個步驟快速提昇簡報力',
+                            type: '實作型',
                             color: 'background: #79BBB5;',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
                             join: 9999,
                             hour: 3,
                             price: 660,
-                        }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_title: '實作型',
-                            color: 'background: #79BBB5;',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }],
+                        }, ],
 
                     }, {
                         link_from: 'research',
@@ -371,173 +362,138 @@
                         link_title: '研究型',
                         // color: 'background: #A0CADB;',
                         courses: [{
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_title: '研究型',
-                            color: 'background: #A0CADB;',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
+
+                            id: 7,
+                            img: './img/course/course_img/課程照片-職場溝通管理學：打造團隊好關係與高績效.jpg',
+                            course_title: '打造團隊好關係與高績效',
+                            type: '研究型',
+                            color: 'background:#A0CADB;',
+                            join: 7777,
+                            hour: 7,
+                            price: 770,
                         }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_title: '研究型',
-                            color: 'background: #A0CADB;',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_title: '研究型',
-                            color: 'background: #A0CADB;',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }],
+                            id: 8,
+                            img: './img/course/course_img/課程照片-職場溝通管理學：打造團隊好關係與高績效.jpg',
+                            course_title: '打造團隊好關係與高績效',
+                            type: '研究型',
+                            color: 'background:#A0CADB;',
+                            join: 7777,
+                            hour: 7,
+                            price: 770,
+                        }, ],
 
                     }, {
                         link_from: 'art',
                         link_to: 'art_session',
                         link_title: '文藝型',
-                        // color: 'background: #ECECEC;',
+                        // color: 'background: #CCC5E3;',
                         courses: [{
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            color: 'background: #ECECEC;',
-                            link_title: '文藝型',
-
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
+                            id: 9,
+                            img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
+                            course_title: '行銷=內容x社群x商務',
+                            type: '文藝型',
+                            color: 'background:#CCC5E3;',
                             join: 9999,
-                            hour: 3,
-                            price: 660,
+                            hour: 9,
+                            price: 990,
                         }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            color: 'background: #ECECEC;',
-                            link_title: '文藝型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_title: '文藝型',
-                            color: 'background: #ECECEC;',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }],
+                            id: 10,
+                            img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
+                            course_title: '行銷=內容x社群x商務',
+                            type: '藝術型',
+                            color: 'background:#CCC5E3;',
+                            join: 5555,
+                            hour: 5,
+                            price: 550,
+                        }, ],
 
 
                     }, {
                         link_from: 'social',
                         link_to: 'social_session',
                         link_title: '社會型',
-                        // color: 'background: #F7EA92;',
+                        // color: 'background: #F4C3C5;',
                         courses: [{
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            color: 'background: #F7EA92;',
-                            link_title: '社會型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
+                            id: 11,
+                            img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
+                            course_title: '行銷=內容x社群x商務',
+                            type: '社會型',
+                            color: 'background:#F4C3C5;',
+                            join: 5555,
+                            hour: 5,
+                            price: 550,
                         }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            color: 'background: #F7EA92;',
-                            link_title: '社會型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            color: 'background: #F7EA92;',
-                            link_title: '社會型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }],
+                            id: 12,
+                            img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
+                            course_title: '行銷=內容x社群x商務',
+                            type: '社會型',
+                            color: 'background:#F4C3C5;',
+                            join: 5555,
+                            hour: 5,
+                            price: 550,
+                        }, ],
 
 
                     }, {
                         link_from: 'enterprise',
                         link_to: 'enterprise_session',
                         link_title: '企業型',
-                        // color: 'background: #F4C3C5;',
+                        // color: 'background: #E7995F;',
                         courses: [{
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            color: 'background: #F4C3C5;',
-                            link_title: '企業型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
+                            id: 13,
+                            img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
+                            course_title: '行銷=內容x社群x商務',
+                            type: '企業型',
+                            color: 'background:#E7995F;',
+                            join: 5555,
+                            hour: 5,
+                            price: 550,
                         }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            color: 'background: #F4C3C5;',
-                            link_title: '企業型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            color: 'background: #F4C3C5;',
-                            link_title: '企業型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }],
+                            id: 14,
+                            img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
+                            course_title: '行銷=內容x社群x商務',
+                            type: '企業型',
+                            color: 'background:#E7995F;',
+                            join: 5555,
+                            hour: 5,
+                            price: 550,
+                        }, ],
 
 
                     }, {
                         link_from: 'thing',
                         link_to: 'thing_session',
                         link_title: '事務型',
-                        color: 'background: #CCC5E3;',
+                        color: 'background: #F7EA92;',
                         courses: [{
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_to: 'thing_session',
-                            link_title: '事務型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
+                            id: 15,
+                            img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
+                            course_title: '行銷=內容x社群x商務',
+                            type: '事務型',
+                            color: 'background:#F7EA92;',
+                            join: 5555,
+                            hour: 5,
+                            price: 550,
                         }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_to: 'thing_session',
-                            link_title: '事務型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }, {
-                            img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                            link_title: '事務型',
-                            course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                            join: 9999,
-                            hour: 3,
-                            price: 660,
-                        }],
+                            id: 16,
+                            img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
+                            course_title: '行銷=內容x社群x商務',
+                            type: '事務型',
+                            color: 'background:#F7EA92;',
+                            join: 5555,
+                            hour: 5,
+                            price: 550,
+                        }, ],
 
                     }],
 
-                    main_course: {
-                        img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
-                        course_title: '九個步驟快速提昇你的簡報力、溝通力',
-                        join: 9999,
-                        hour: 3,
-                        price: 660,
-                    },
+
                     hot_course: [{
                         id: 1,
                         img: './img/course/course_img/課程照片-提昇你的簡報力：九個步驟快速提昇你的簡報力、溝通力.jpg',
                         course_title: '九個步驟快速提昇簡報力',
                         type: '企業型',
-                        color: 'background: #CCC5E3;',
+                        color: 'background: #E7995F;',
                         join: 9999,
                         hour: 3,
                         price: 660,
@@ -546,8 +502,8 @@
                         id: 2,
                         img: './img/course/course_img/課程照片-新世代行銷法則：行銷 = 內容 X 社群 X 商務.jpg',
                         course_title: '行銷=內容x社群x商務',
-                        type: '藝術型',
-                        color: 'background:#F4C3C5;',
+                        type: '文藝型',
+                        color: 'background:#CCC5E3;',
                         join: 5555,
                         hour: 5,
                         price: 550,
@@ -557,7 +513,7 @@
                         img: './img/course/course_img/課程照片-職場溝通管理學：打造團隊好關係與高績效.jpg',
                         course_title: '打造團隊好關係與高績效',
                         type: '實作型',
-                        color: 'background:#F7EA92;',
+                        color: 'background:#79BBB5;',
                         join: 7777,
                         hour: 7,
                         price: 770,
@@ -567,7 +523,7 @@
                         img: './img/course/course_img/課程照片-職場溝通管理學：打造團隊好關係與高績效.jpg',
                         course_title: '打造團隊好關係與高績效',
                         type: '研究型',
-                        color: 'background:#ECECEC;',
+                        color: 'background:#A0CADB;',
                         join: 7777,
                         hour: 7,
                         price: 770,
