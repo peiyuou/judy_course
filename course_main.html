@@ -228,37 +228,37 @@
                                     <div class="col-xl-12">
                                         <div class="course_session_contain">
                                             <ul>
-                                                <li class="auto_slider_card " v-for="item in section.courses">
-                                                    <div class="card_pic">
-                                                        <a href="#">
-                                                            <img :src="item.img" alt="">
+                                                <li class="auto_slider_card " v-for="card in section.courses">
+                                                    <div class="card_pic ">
+                                                        <a href="# ">
+                                                            <img :src="card.img " alt=" ">
                                                         </a>
                                                     </div>
-                                                    <div class="card_content">
-                                                        <p>{{item.course_title}}</p>
-                                                        <div class="card_content_scrb">
-                                                            <div class="card_content_join">
-                                                                <i class="fas fa-user-friends"></i><span>{{item.join}}人已參與此課程</span>
+                                                    <div class="card_content ">
+                                                        <p>{{card.course_title}}</p>
+                                                        <div class="card_content_scrb ">
+                                                            <div class="card_content_join ">
+                                                                <i class="fas fa-user-friends "></i><span>{{card.join}}人已參與此課程</span>
                                                             </div>
-                                                            <div class="card_content_msg">
-                                                                <div class="type_time">
-                                                                    <span class="card_type " :style="item.color">{{item.type}}</span>
-                                                                    <span class="card_time">總計{{item.hour}}小時</span>
+                                                            <div class="card_content_msg ">
+                                                                <div class="type_time ">
+                                                                    <span class="card_type " :style="card.color ">{{card.type}}</span>
+                                                                    <span class="card_time ">總計{{card.hour}}小時</span>
                                                                 </div>
 
                                                                 <div class="price_btn ">
-                                                                    <span class="card_price">NT${{item.price}}</span>
-                                                                    <div class="add_cart_btn">
-                                                                        <button>
-                                                                            <i class="fas fa-shopping-cart"></i>
+                                                                    <span class="card_price ">NT${{card.price}}</span>
+                                                                    <div class="add_cart_btn ">
+                                                                        <button @click="add_cart(card)">
+                                                                            <i class="fas fa-shopping-cart "></i>
                                                                         </button>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- <div class="add_cart_btn">
-                                                <button class="btn_primary">加入購物車</button>
+                                                    <!-- <div class="add_cart_btn ">
+                                                <button class="btn_primary ">加入購物車</button>
                                             </div> -->
                                                 </li>
                                             </ul>
@@ -282,18 +282,18 @@
 
 
     <!-- footer -->
-    <div class="footer_wave">
+    <div class="footer_wave ">
         <div>
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <svg class="waves " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " viewBox="0 24 150 28 " preserveAspectRatio="none " shape-rendering="auto ">
                 <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18
-                    88 18 v44h-352z" />
+                    <path id="gentle-wave "
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z " />
                 </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255, 229, 89,0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(160, 202, 219,0.7)" />
-                    <use xlink:href="#gentle-wave" x="48" y="4" fill="rgba(121, 187, 181,0.6)" />
-                    <use xlink:href="#gentle-wave" x="48" y="6" fill="rgba(255, 255, 255,0.8)" />
+                <g class="parallax ">
+                    <use xlink:href="#gentle-wave " x="48 " y="0 " fill="rgba(255, 229, 89,0.5) " />
+                    <use xlink:href="#gentle-wave " x="48 " y="2 " fill="rgba(160, 202, 219,0.7) " />
+                    <use xlink:href="#gentle-wave " x="48 " y="4 " fill="rgba(121, 187, 181,0.6) " />
+                    <use xlink:href="#gentle-wave " x="48 " y="6 " fill="rgba(255, 255, 255,0.8) " />
                 </g>
             </svg>
         </div>
@@ -302,22 +302,22 @@
 
 
     <!--Content starts-->
-    <div class="footer flex">
-        <p class="p_small">&copy2020 Powered by direction.ALL Right Reserved.
+    <div class="footer flex ">
+        <p class="p_small ">&copy2020 Powered by direction.ALL Right Reserved.
         </p>
     </div>
 
 
 
 
-    <script src="https://kit.fontawesome.com/d18b20bddd.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src="https://kit.fontawesome.com/d18b20bddd.js " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js "></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/course/owl_auto_slide.js"></script>
-    <script src="./js/course/parallax_script.js"></script>
-    <script src="./js/course/course_main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="./js/header.js "></script>
+    <script src="./js/course/owl_auto_slide.js "></script>
+    <script src="./js/course/parallax_script.js "></script>
+    <script src="./js/course/course_main.js "></script>
     <script>
         $(window).ready(function() {
             $('#close_test').click(function() {
