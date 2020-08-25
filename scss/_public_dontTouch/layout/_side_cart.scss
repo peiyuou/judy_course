@@ -33,9 +33,12 @@ div.side_cart {
     }
     div.cart_course {
         margin: 10px;
-        // background: pink;
         overflow-y: scroll;
         height: 100%;
+        p.no_item {
+            text-align: center;
+            transform: translateY(150px);
+        }
         ul {
             display: flex;
             flex-direction: column;

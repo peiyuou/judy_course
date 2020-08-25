@@ -562,6 +562,12 @@ div.side_cart div.cart_course {
   height: 100%;
 }
 
+div.side_cart div.cart_course p.no_item {
+  text-align: center;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+}
+
 div.side_cart div.cart_course ul {
   display: -webkit-box;
   display: -ms-flexbox;

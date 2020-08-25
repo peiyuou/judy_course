@@ -68,6 +68,7 @@
                 <button id="cart_close" class="btn_third">close</button>
             </div>
             <div class="cart_course">
+                <p class="no_item" v-show="cart_items.length == 0">購物車內無添加課程</p>
                 <ul>
                     <li class="cart_item" v-for="(item,index) in cart_items">
                         <div class="cus_card">
